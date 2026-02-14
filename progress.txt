@@ -1,0 +1,25 @@
+## Codebase Patterns
+
+- Migrations: Use IF NOT EXISTS
+- React: useRef<Timeout | null>(null)
+
+## 2026-02-14 - US-001
+
+- Implemented LoginForm component with email/password fields
+- Added email validation using regex pattern
+- Created comprehensive tests for component functionality
+- Set up TypeScript project with React and testing framework
+- **Learnings:**
+  - Used functional React patterns with TypeScript
+  - Implemented proper form validation with error state management
+  - Used React Testing Library for component testing
+  - Followed strict TypeScript configuration for type safety
+  - Used single quotes and no semicolons as per project style guide
+
+**Files changed:**
+- Created src/components/LoginForm.tsx
+- Created src/components/LoginForm.test.tsx
+- Created src/setupTests.ts
+- Created tsconfig.json
+- Created jest.config.js
+- Updated package.json with scripts and dependencies
