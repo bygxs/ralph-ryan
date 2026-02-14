@@ -1,0 +1,81 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 2px solid #e1e4e8;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+}
+
+.form-group input:hover {
+  border-color: #c6cbd1;
+  background-color: #ffffff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0366d6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+.form-group input.error {
+  border-color: #d73a49;
+}
+
+.error-message {
+  color: #d73a49;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+button[type="submit"] {
+  padding: 12px 24px;
+  background-color: #0366d6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+button[type="submit"]:hover {
+  background-color: #0256cc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(3, 102, 214, 0.3);
+}
+
+button[type="submit"]:active {
+  background-color: #024ba8;
+  transform: translateY(0);
+}
+
+button[type="submit"]:hover {
+  background-color: #0256cc;
+}
+
+button[type="submit"]:active {
+  background-color: #024ba8;
+}

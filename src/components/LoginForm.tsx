@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './LoginForm.css'
 
 interface LoginFormProps {
   onSubmit: (email: string, password: string) => void
@@ -61,7 +62,7 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
         />
       </div>
       
-      <button type="submit">Login</button>
+      <button type="submit">🚀 Sign In</button>
     </form>
   )
 }

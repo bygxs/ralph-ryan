@@ -13,7 +13,7 @@ describe('LoginForm', () => {
     
     expect(screen.getByLabelText('Email:')).toBeInTheDocument()
     expect(screen.getByLabelText('Password:')).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: 'Login' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: '🚀 Sign In' })).toBeInTheDocument()
   })
 
   it('validates email format', async () => {
@@ -45,7 +45,7 @@ describe('LoginForm', () => {
     
     fireEvent.change(screen.getByLabelText('Email:'), { target: { value: 'test@example.com' } })
     fireEvent.change(screen.getByLabelText('Password:'), { target: { value: 'password123' } })
-    fireEvent.click(screen.getByRole('button', { name: 'Login' }))
+    fireEvent.click(screen.getByRole('button', { name: '🚀 Sign In' }))
     
     expect(mockOnSubmit).toHaveBeenCalledWith('test@example.com', 'password123')
   })
